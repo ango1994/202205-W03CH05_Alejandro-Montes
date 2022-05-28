@@ -7,13 +7,18 @@ export class PokemonList extends Component {
     constructor(selector: string, pokemons: Array<iPokemon>) {
         super();
         this.template = this.createList();
-        this.addRender(selector);
+        this.render(selector);
         pokemons.forEach((pokemon) => new PokemonCard('.list', pokemon));
     }
 
     createList() {
-        let html = `<ul class="list">`;
-        html += `</ul>`;
+        let html = `<div class="container"><ul class="list">`;
+        html += `</ul>
+        <div class="buttons">
+        <button class="button button-minus" id="atras">atras</button>
+        <button class="button button-plus" id="adelante">Adelante</button>
+        </div>
+        </div>`;
         return html;
     }
 }

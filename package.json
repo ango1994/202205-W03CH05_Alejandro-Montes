@@ -7,7 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint",
         "start": "tsc --watch",
-        "startnode": "node index"
+        "startnode": "node index",
+        "sass": "sass src/sass:dist/css -w --no-source-map"
     },
     "type": "module",
     "author": "",
@@ -25,6 +26,7 @@
         "eslint-plugin-import": "^2.26.0",
         "eslint-plugin-n": "^15.2.0",
         "eslint-plugin-promise": "^6.0.0",
+        "sass": "^1.52.1",
         "typescript": "^4.7.2"
     },
     "prettier": {

@@ -15,13 +15,17 @@ export class PokemonCard extends Component {
                     <ul>
                         <li>
                             <img
-                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.pokemon.id}.png"
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
+                                    this.pokemon.id
+                                }.png"
                                 alt="pokemon"
                             />
                         </li>
-                        <li><h2>${this.pokemon.name}</h2></li>
-                        <li>Peso: ${this.pokemon.weight}</li>
-                        <li>Altura: ${this.pokemon.height}</li>
+                        <li><h2>${this.pokemon.name.toUpperCase()}</h2></li>
+                        <li>Peso: <span>${
+                            this.pokemon.weight / 10
+                        } kg</span></li>
+                        <li>Altura: ${this.pokemon.height * 10} cm</li>
                         <li>
                             <ul>
                                 <li><h3>Tipo:</h3></li>`;
