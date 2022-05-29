@@ -25,6 +25,9 @@ body {
 .pokemon {
     display: grid;
 }
+.pokecard {
+    padding: 50px 0px;
+}
 
 ul {
     list-style: none;
@@ -61,8 +64,9 @@ ul {
         cursor: pointer;
     }
     button:hover {
-        background-color: aqua;
-        transition: 1s;
+        background-color: black;
+        color: white;
+        transition: 0.2s;
     }
 }
 
