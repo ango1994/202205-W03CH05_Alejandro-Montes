@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: rgb(72, 205, 155);
+  background: linear-gradient(315deg, rgb(72, 205, 155) 21%, rgb(171, 229, 139) 93%);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+ul img {
+  width: 300px;
+}
+
+.stats {
+  display: felx;
+}

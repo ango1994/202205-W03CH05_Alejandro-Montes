@@ -1,0 +1,11 @@
+body {
+    background-color: azure;
+}
+
+.pokemon {
+    display: grid;
+}
+
+ul {
+    list-style: none;
+}
